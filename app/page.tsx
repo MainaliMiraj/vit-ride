@@ -1,7 +1,10 @@
-import Image from "next/image";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <div className="flex items-center flex-col">
+      <Navbar />
+      Home
+    </div>
   );
 }
