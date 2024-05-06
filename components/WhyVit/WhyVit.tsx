@@ -5,19 +5,19 @@ import Image from "next/image";
 
 const WhyVit = () => {
   return (
-    <div className="flex flex-row mt-6 w-10/12  bg-white p-10 gap-x-40 items-center justify-center font-extrabold text-lg">
+    <div className="flex flex-row mt-6 w-10/12  bg-white p-12 gap-x-40 items-center justify-center font-extrabold text-lg">
       <div className="max-w-80">
         <p className="text-5xl text-orange-400 font-extrabold">Why VitRide?</p>
-        <p className="mt-4">
+        <p className="mt-2">
           Discover why VitRide is the preferred ride booking service for campus
           trips. Safety, sustainability, and speed all in one app.
         </p>
-        <div className="mt-8">
+        <div className="mt-4">
           <label className="inline-flex items-center gap-2 text-orange-400">
             <BsSuitcaseLgFill />
             <span>Real-Time</span>
           </label>
-          <div className="mb-4 ml-6">
+          <div className="mb-3 ml-6">
             Get instant updates on ride availability and track your driver in
             real-time for maximum efficiency.
           </div>
@@ -27,12 +27,12 @@ const WhyVit = () => {
             <FaWallet />
             <span>Wallet Friendly</span>
           </label>
-          <div className="mb-4 ml-6">
+          <div className="mb-3 ml-6">
             Discover why RidePulse is the preferred ride booking service for
             campus trips. Safety, sustainability, and speed all in one app.
           </div>
         </div>
-        <div className="mb-4">
+        <div className="mb-3">
           <label className="inline-flex items-center gap-2 text-orange-400">
             <FaBell />
             <span>Clean Ride</span>
@@ -54,7 +54,7 @@ const WhyVit = () => {
           src="/images/chill.jpeg"
           alt="chill and ride"
           width={800}
-          height={100}
+          height={0}
           className="scale-y-75 scale-x-75"
         />
       </div>

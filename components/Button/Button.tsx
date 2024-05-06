@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({
   //   `hover:bg-${color}-${colorValue}`;
   // }
 
-  const buttonClassName = `${bgColor} ${textColor} p-2 cursor-pointer rounded-md  hover:bg-orange-400 w-32 transition-all`;
+  const buttonClassName = `${bgColor} ${textColor} p-2 cursor-pointer rounded-md  hover:text-orange-400 hover:underline w-32 transition-all`;
 
   return (
     <button className={buttonClassName}>
