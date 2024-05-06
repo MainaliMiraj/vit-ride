@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../Button/Button";
+import { FaCashRegister, FaSignInAlt } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className=" bg-white items-center w-11/12 mt-4 shadow-current">
+    <nav className=" bg-white items-center w-11/12 mt-4 shadow-current z-10">
       <div className="px-3 py-3 w-full flex flex-row justify-between items-center">
         <div className="flex items-center flex-row gap-2">
           <div>
@@ -30,7 +31,7 @@ const Navbar = () => {
           <div className="hover:underline">
             <ul>
               <li>
-                <Link href="/">Book Now</Link>
+                <Link href="/book-now">Book Now</Link>
               </li>
             </ul>
           </div>
@@ -38,7 +39,7 @@ const Navbar = () => {
           <div className="hover:underline">
             <ul>
               <li>
-                <Link href="/">Contact Us</Link>
+                <Link href="/contact-us">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -46,12 +47,13 @@ const Navbar = () => {
           <div className="hover:underline">
             <ul>
               <li>
-                <Link href="/">Services</Link>
+                <Link href="/services">Services</Link>
               </li>
             </ul>
           </div>
           <div>
             <Button
+              icon={FaSignInAlt}
               buttonName="Sign In"
               bgColor="bg-gray-200"
               textColor="text-black"
@@ -59,6 +61,7 @@ const Navbar = () => {
           </div>
           <div>
             <Button
+              icon={FaCashRegister}
               buttonName="Register"
               bgColor="bg-gray-200"
               textColor="text-black"
