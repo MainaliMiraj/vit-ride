@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row gap-4 mr-4 items-center ">
-          <div className="hover:underline">
+          <div className="hover:underline hover:text-orange-400">
             <ul>
               <li>
                 <Link href="/book-now">Book Now</Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="hover:underline">
+          <div className="hover:underline hover:text-orange-400">
             <ul>
               <li>
                 <Link href="/contact-us">Contact Us</Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="hover:underline">
+          <div className="hover:underline hover:text-orange-400">
             <ul>
               <li>
                 <Link href="/services">Services</Link>

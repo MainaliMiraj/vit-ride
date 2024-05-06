@@ -23,13 +23,11 @@ const Button: React.FC<ButtonProps> = ({
   //   `hover:bg-${color}-${colorValue}`;
   // }
 
-  const buttonClassName = `${bgColor} ${textColor} p-2 cursor-pointer rounded-md  hover:bg-gray-300 w-32`;
+  const buttonClassName = `${bgColor} ${textColor} p-2 cursor-pointer rounded-md  hover:bg-orange-400 w-32 transition-all`;
 
   return (
     <button className={buttonClassName}>
-      {Icon && <Icon className="inline-block mr-2" />}{" "}
-      {/* Render icon if it's provided */}
-      {buttonName}
+      {Icon && <Icon className="inline-block mr-2" />} {buttonName}
     </button>
   );
 };
