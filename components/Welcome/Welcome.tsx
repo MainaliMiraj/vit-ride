@@ -1,15 +1,16 @@
-import React from 'react'
-import Button from '../Button/Button';
+import React from "react";
+import Button from "../Button/Button";
 import Image from "next/image";
 import { FaDownload, FaCar } from "react-icons/fa";
+import RideForm from "../RideForm/RideForm";
 
 const Welcome = () => {
   return (
-    <div className="w-full flex p-8 flex-row text-orange-400">
-      <div className="mt-24 p-4 font-extrabold">
+    <div className="w-11/12 flex p-8 flex-row text-orange-400 shadow-md mt-6 gap-20 justify-around overflow-hidden">
+      <div className="mt-24 p-4 font-extrabold w-50">
         <p className="text-6xl">Welcome to</p>
         <p className="text-6xl">VIT Ride</p>
-        <div className="mt-4">
+        <div className="mt-4 line-clamp-2">
           Your go-to solution for college campus ride booking. Fast, reliable,
           and tailor-made for your daily commute.
         </div>
@@ -29,18 +30,19 @@ const Welcome = () => {
             />
           </div>
         </div>
+        <RideForm />
       </div>
       <div>
         <Image
           src="/images/backimg.jpeg"
           alt="ride image"
-          width={1000}
-          height={1000}
-          className="rotate-10 relative"
+          width={500}
+          height={100}
+          className="rotate-12"
         />
       </div>
     </div>
   );
-}
+};
 
-export default Welcome
+export default Welcome;

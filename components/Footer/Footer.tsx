@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-white gap-4 flex flex-row w-full items-center justify-between px-32 my-4">
+    <div className="bg-white gap-4 flex flex-row w-11/12 items-center justify-between px-32 my-4 shadow-md">
       <div className=" flex gap-2 flex-col items-center">
         <div>© 2024 VitRide. All right reserved.</div>
         <div>
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 p-8 cursor-pointer">
+      <div className="grid grid-cols-3 gap-4 p-8 cursor-pointer font-extrabold">
         <p className="hover:text-orange-400">Features</p>
         <p className="hover:text-orange-400">Company</p>
         <p className="hover:text-orange-400">Legal</p>
