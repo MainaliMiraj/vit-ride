@@ -1,16 +1,16 @@
 'use client'
 
-import React, { useState } from "react";
+import React, { FormEvent, useState } from "react";
 import Button from "../Button/Button";
 
 const RideForm = () => {
   const [pickup, setPickup] = useState("");
   const [destination, setDestination] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Pickup:", pickup);
-    console.log("Destination:", destination);
+  const handleSubmit = (e:FormEvent) => {
+    // e.preventDefault();
+    // console.log("Pickup:", pickup);
+    // console.log("Destination:", destination);
     // Add your logic here to perform actions with pickup and destination data
   };
 

@@ -38,7 +38,7 @@ const Welcome = () => {
           alt="ride image"
           width={500}
           height={100}
-          className="rotate-12"
+          className="rotate-12 mt-10 mr-2"
         />
       </div>
     </div>
