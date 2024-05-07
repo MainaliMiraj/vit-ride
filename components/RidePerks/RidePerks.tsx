@@ -38,7 +38,7 @@ const RidePerks = () => {
             Left something behind? Our Lost & Found feature helps you retrieve
             items left in vehicles with just a few taps.
           </div>
-          <Button buttonName="Learn More" bgColor="bg-gray-100" textColor="green" />
+          <Button buttonName="Learn More" bgColor="bg-gray-100" textColor="black" />
         </div>
       </div>
     </div>

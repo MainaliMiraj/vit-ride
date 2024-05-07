@@ -1,29 +1,36 @@
-import { Icon } from "next/dist/lib/metadata/types/metadata-types";
 import React from "react";
 import { IconType } from "react-icons";
+import Link from "next/link";
 
 interface ButtonProps {
   buttonName: string;
   bgColor: string;
   textColor: string;
-  // color?: string;
-  // colorValue?: string | number;
+  color?: string;
+  colorValue?: string | number;
   icon?: IconType;
+  link?: string;
 }
 const Button: React.FC<ButtonProps> = ({
   buttonName,
   bgColor,
   textColor,
-  // color,
-  // colorValue,
   icon: Icon,
+  link,
 }) => {
-  // let hoverClass = "";
-  // if (color && colorValue) {
-  //   `hover:bg-${color}-${colorValue}`;
-  // }
-
   const buttonClassName = `${bgColor} ${textColor} p-2 cursor-pointer rounded-md  hover:text-orange-400 hover:underline w-32 transition-all`;
+
+  if (link) {
+    return (
+      <Link
+        href={link}
+        className={`rounded-md py-2 px-4 ${bgColor} ${textColor} flex items-center  justify-center hover:text-orange-400 hover:underline`}
+      >
+        {Icon && <Icon className="mr-2" />}
+        {buttonName}
+      </Link>
+    );
+  }
 
   return (
     <button className={buttonClassName}>

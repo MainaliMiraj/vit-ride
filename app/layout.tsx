@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Neuton } from "next/font/google";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
 
-const inter = Neuton({ subsets: ["latin"],weight:'400' });
+const inter = Neuton({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "vit-ride",
@@ -15,8 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-slate-100`}>{children}</body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={`${inter.className} bg-slate-100`}>{children}</body>
+      </html>
+    </ClerkProvider>
   );
 }
