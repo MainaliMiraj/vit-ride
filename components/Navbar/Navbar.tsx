@@ -77,7 +77,7 @@ const Navbar = () => {
               buttonName="Sign In"
               bgColor="bg-gray-200"
               textColor="text-black"
-              link="/SignIn"
+              link="/sign-in"
             />
           </div>
           <div>
@@ -86,7 +86,7 @@ const Navbar = () => {
               buttonName="Register"
               bgColor="bg-gray-200"
               textColor="text-black"
-              link="/SignUp"
+              link="/sign-up"
             />
           </div>
         </div>
