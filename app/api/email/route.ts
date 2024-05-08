@@ -1,6 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
+import Navbar from "@/components/Navbar/Navbar";
 
 export async function POST(request: NextRequest) {
   const { email, name, message } = await request.json();
@@ -33,7 +34,7 @@ export async function POST(request: NextRequest) {
 
   try {
     await sendMailPromise();
-    return NextResponse.json({ message: "Email sent" });
+    return NextResponse.json({ message: "Email sent Successfully." });
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });
   }

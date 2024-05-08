@@ -24,19 +24,12 @@ const Welcome = () => {
             icon={FaCar}
           />
           <div>
-            <Link href="/about">
-              <div>
-                <h2>About Page</h2>
-                <p>Click here to learn more about us!</p>
-              </div>
-
-              <Button
-                buttonName="Download App"
-                bgColor="bg-gray-200"
-                textColor="text-black"
-                icon={FaDownload}
-              />
-            </Link>
+            <Button
+              buttonName="Download App"
+              bgColor="bg-gray-200"
+              textColor="text-black"
+              icon={FaDownload}
+            />
           </div>
         </div>
         <RideForm />
