@@ -1,11 +1,12 @@
 import { SignIn } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar/Navbar";
+import Image from "next/image";
 
 export default function Page() {
   return (
     <div className="flex flex-col items-center justify-center ">
       <Navbar />
-      <div className="mt-10">
+      <div className="mt-16">
         <SignIn path="/sign-in" />
       </div>
     </div>

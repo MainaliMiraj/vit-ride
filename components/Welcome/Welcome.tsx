@@ -6,7 +6,7 @@ import RideForm from "../RideForm/RideForm";
 
 const Welcome = () => {
   return (
-    <div className="w-11/12 flex p-8 flex-row text-orange-400 shadow-md mt-6 gap-20 justify-around overflow-hidden">
+    <div className="w-11/12 flex p-8 flex-row text-orange-400 shadow-md mt-6 gap-20 justify-between overflow-hidden">
       <div className="mt-24 p-4 font-extrabold w-50">
         <p className="text-6xl">Welcome to</p>
         <p className="text-6xl">VIT Ride</p>

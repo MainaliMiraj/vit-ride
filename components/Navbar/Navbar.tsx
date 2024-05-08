@@ -1,18 +1,17 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../Button/Button";
-import { FaCashRegister, FaSignInAlt,FaBars,FaTimes } from "react-icons/fa";
+import { FaCashRegister, FaSignInAlt, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import UserLoginButton from "../UserButton/page";
+import { UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-
-  const [isOpen,setIsOpen]=useState(false)
-
-  const toggleNav=()=>setIsOpen(!isOpen)
-
+  const toggleNav = () => setIsOpen(!isOpen);
 
   return (
     <nav className=" bg-white items-center w-11/12 mt-4 shadow-current">
@@ -88,6 +87,9 @@ const Navbar = () => {
               textColor="text-black"
               link="/sign-up"
             />
+          </div>
+          <div>
+            <UserButton />
           </div>
         </div>
       </div>

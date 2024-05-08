@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { FormEvent, useState } from "react";
 import Button from "../Button/Button";
@@ -6,8 +6,9 @@ import Button from "../Button/Button";
 const RideForm = () => {
   const [pickup, setPickup] = useState("");
   const [destination, setDestination] = useState("");
+  const [clicked, setClicked] = useState(false);
 
-  const handleSubmit = (e:FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     // e.preventDefault();
     // console.log("Pickup:", pickup);
     // console.log("Destination:", destination);
@@ -33,6 +34,7 @@ const RideForm = () => {
               placeholder="Enter pickup location"
               value={pickup}
               onChange={(e) => setPickup(e.target.value)}
+              onClick={() => setClicked(true)}
             />
           </div>
           <div className="mb-4">
@@ -52,13 +54,12 @@ const RideForm = () => {
             />
           </div>
           <div className="flex items-center justify-between">
-            <Button buttonName="Search Ride" bgColor="bg-gray-100" textColor="text-black"/>
-            {/* <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            <button
+              className="bg-gray-200 hover:text-orange-500 text-black hover:underline font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Search
-            </button> */}
+            </button>
           </div>
         </form>
       </div>
