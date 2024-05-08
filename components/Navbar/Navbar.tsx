@@ -45,16 +45,7 @@ const Navbar = () => {
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
-
         <div className="flex flex-row gap-4 mr-4 items-center ">
-          <div className="hover:underline hover:text-orange-400">
-            <ul>
-              <li>
-                <Link href="/book-now">Book Now</Link>
-              </li>
-            </ul>
-          </div>
-
           <div className="hover:underline hover:text-orange-400">
             <ul>
               <li>
@@ -66,7 +57,7 @@ const Navbar = () => {
           <div className="hover:underline hover:text-orange-400">
             <ul>
               <li>
-                <Link href="/services">Services</Link>
+                <Link href="/services">Our Services</Link>
               </li>
             </ul>
           </div>
