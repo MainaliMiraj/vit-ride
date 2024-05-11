@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { sendEmail } from "@/utils/send-email";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import toast, { Toaster } from "react-hot-toast";
 
 export type FormData = {
   name: string;
@@ -14,8 +15,10 @@ export type FormData = {
 
 const Contact: FC = () => {
   const { register, handleSubmit } = useForm<FormData>();
+  const notify = () => toast.loading("Submitting the Form...");
 
   function onSubmit(data: FormData) {
+    notify();
     sendEmail(data);
   }
 
@@ -77,6 +80,20 @@ const Contact: FC = () => {
         </div>
       </form>
       <Footer />
+      <Toaster
+        position="top-center"
+        gutter={8}
+        containerClassName=""
+        containerStyle={{}}
+        toastOptions={{
+          className: "",
+          duration: 3000,
+          style: {
+            background: "orange",
+            color: "#fff",
+          },
+        }}
+      />
     </div>
   );
 };
